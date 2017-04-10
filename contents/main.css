@@ -11,7 +11,7 @@ body {
 header {
 	width: 100%;
 	background-color: #666;
-	background: linear-gradient(to bottom, #555, #666, #444);
+	background: linear-gradient(to bottom, #444, #666);
 	padding-bottom: 50px;
 	padding-top: 10px;
 }
@@ -110,10 +110,7 @@ main>p {
 }
 main img {
 	float: right;
-	box-shadow: 7px 7px 10px rgb(200, 30, 50);
-	box-shadow: 7px 7px 10px rgba(140, 30, 40, 0.7);
-	border-radius: 15%;
-	margin: 1em;
+	margin: 1em;	
 }
 /* Styles for each section/book */
 section {
