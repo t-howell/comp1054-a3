@@ -1,0 +1,241 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+/* Setting main styles for body*/
+body {
+/*	background-image: url('books.jpg'); */
+	width: 100%;
+	margin: 0;
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+/* Header */
+header {
+	width: 100%;
+	background-color: #666;
+	background: linear-gradient(to bottom, #555, #666, #444);
+	padding-bottom: 50px;
+	padding-top: 10px;
+}
+header>h1 {
+	margin-left: 30px;
+	background-color: lightcoral;
+	width: 330px;
+	height: 32px;
+	padding: .5em;
+	border-radius: 1em;
+}
+header>p {
+	margin-left: 30px;
+}
+/* Nav */
+nav {
+	width: 100%;
+}
+nav ul {
+	list-style-type: none;
+}
+li>a, div>a {
+	color: #fff;
+	text-decoration: none;
+}
+/* Drop-down menu - with help from w3schools */
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropbtn {
+	width: 200px;
+}
+.dropbtn:hover {
+    background-color: #555;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 19%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* ---------------------------------------------- */
+/* Colour transition on nav text */
+a {
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;
+}
+a:hover {
+	color: lightcoral;
+}
+nav>ul>li {
+	display: inline-block;
+	border-right: 1px solid black;
+}
+/* Floating Nav */
+nav.floater {
+	position: fixed;
+	top: 0;
+	background-color: rgba(255,255,255,0.4);
+	height: 70px;
+}
+/* Main content*/
+main {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 1%;
+	background: lightcoral;
+	padding-bottom: 1%;
+}
+main>h2 {
+	margin-left: 2em;
+}
+main>p {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+main img {
+	float: right;
+	box-shadow: 7px 7px 10px rgb(200, 30, 50);
+	box-shadow: 7px 7px 10px rgba(140, 30, 40, 0.7);
+	border-radius: 15%;
+	margin: 1em;
+}
+/* Styles for each section/book */
+section {
+	line-height: 1.5;
+	padding: 5%;
+	padding-top: 1%;
+	background-color: rgb(200, 30, 50);
+	background-color: rgba(200, 30, 40, 0.5);
+	border-radius: 25px;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+section:last-child {
+	margin-bottom: 0;
+}
+/* Changing the size of headings */
+h3 {
+	font-size: 2em;
+	text-shadow: 2px 2px rgb(182, 32, 54);
+	text-shadow: 2px 2px rgba(182, 32, 54, 1);
+}
+h4 {
+	font-size: 1.3em;
+	text-shadow: 1px 1px rgb(182, 32, 54);
+	text-shadow: 1px 1px rgba(182, 32, 54, 1);
+}
+/* Footer styles*/
+footer {
+	clear: both;
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+	height: 100%;
+	padding: 10px;
+	margin-top: 0;
+}
+/* Back to top styles */
+footer p a.top {
+	position: fixed;
+	bottom: 2%;
+	right: 2%;
+	background-color: rgb(228, 62, 62);
+	background-color: rgba(228, 62, 62, 0.8);
+	padding: 10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	/* Hide button by default */
+	display: none;
+}
+
+/* Styles for screens under 320px */
+@media only screen and (max-width: 218px) {
+	main {
+	font-size: 120%;
+	}
+	header>h1 {
+		size: 130%;
+		background-color: none;
+		color: #fff;
+	}
+	nav>ul>li {
+		display: block;
+		border-right: none;
+	}
+	.dropbtn {
+		width: 100%;
+	}
+	.dropbtn:hover {
+		background-color: none;
+		color: none;
+	}
+	
+}
+
+@media only screen and (min-width: 320px) {
+		main {
+	font-size: 120%;
+	}
+	header {
+		height: 150px;
+	}
+	header>h1 {
+		size: 140%;
+		background-color: none;
+	}
+	nav {
+		font-size: 90%;
+	}
+	nav>ul>li {
+		display: block;
+		border-right: none;
+	}
+	.dropbtn {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 480px) {
+	main {
+		font-size: 110%;
+	}
+	header>h1 {
+		background-color: none;
+	}
+	nav {
+		font-size: 120%;
+	}
+	nav>ul>li {
+		padding-right: 1em;
+	}
+}
+@media only screen and (min-width: 960px) {
+	header {
+		height: 180px;
+	}
+	nav>ul>li {
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+	a {
+		border: 1px solid #222;
+		text-align: center;
+	}
+}
